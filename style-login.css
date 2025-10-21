@@ -1,0 +1,96 @@
+/* Fondo degradado con animación suave */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor del login */
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Título */
+h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Grupo de inputs con animación */
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-group label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+/* Efecto flotante del texto */
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: -15px;
+  font-size: 12px;
+  color: #00f2fe;
+}
+
+/* Botón */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #00f2fe;
+  border: none;
+  color: #000;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #4facfe;
+  color: white;
+}
+
+/* Texto de registro */
+.registro-text {
+  color: white;
+  margin-top: 20px;
+}
+
+.registro-text a {
+  color: #00f2fe;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.registro-text a:hover {
+  text-decoration: underline;
+}
